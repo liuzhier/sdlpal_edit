@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{B6324ABE-FD0B-4DCC-9C8F-ACCE9317308A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>d:\sdl2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\sdl2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\s\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>d:\sdl2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\sdl2\lib\x64;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Platform)\$(Configuration)\s\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\s\</IntDir>
+    <IncludePath>D:\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\SDL2\LIB\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>d:\sdl2\include</IncludePath>
+    <LibraryPath>D:\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Platform)\$(Configuration)\s\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2.lib;glew32s.lib;sdl2main.lib</AdditionalDependencies>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2.lib;glew32s.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2.lib;glew32s.lib;sdl2main.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2.lib;glew32s.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="glad\glad.c" />
+    <ClCompile Include="main\caviplay.cpp" />
+    <ClCompile Include="main\cbattle.cpp" />
+    <ClCompile Include="main\cbattlebase.cpp" />
+    <ClCompile Include="main\CConfig.cpp" />
+    <ClCompile Include="main\cenemy.cpp" />
+    <ClCompile Include="main\cfight.cpp" />
+    <ClCompile Include="main\cgameui.cpp" />
+    <ClCompile Include="main\cgl_render.cpp" />
+    <ClCompile Include="main\cgl_texture.cpp" />
+    <ClCompile Include="main\cmap.cpp" />
+    <ClCompile Include="main\cmenu.cpp" />
+    <ClCompile Include="main\cmp3play.cpp" />
+    <ClCompile Include="main\cpalapp.cpp" />
+    <ClCompile Include="main\cpalbaseio.cpp" />
+    <ClCompile Include="main\cpalevent.cpp" />
+    <ClCompile Include="main\CPalMain.cpp" />
+    <ClCompile Include="main\cpalui.cpp" />
+    <ClCompile Include="main\cplayer.cpp" />
+    <ClCompile Include="main\cres.cpp" />
+    <ClCompile Include="main\cscene.cpp" />
+    <ClCompile Include="main\cscript.cpp" />
+    <ClCompile Include="main\csdlscreen.cpp" />
+    <ClCompile Include="main\csound.cpp" />
+    <ClCompile Include="main\cuibattle.cpp" />
+    <ClCompile Include="main\midiplay.cpp" />
+    <ClCompile Include="main\pal1.cpp" />
+    <ClCompile Include="main\yj_compress.cpp" />
+    <ClCompile Include="sound\adplug\binfile.cpp" />
+    <ClCompile Include="sound\adplug\binio.cpp" />
+    <ClCompile Include="sound\adplug\dosbox_opls.cpp" />
+    <ClCompile Include="sound\adplug\emuopls.cpp" />
+    <ClCompile Include="sound\adplug\fprovide.cpp" />
+    <ClCompile Include="sound\adplug\mame_opls.cpp" />
+    <ClCompile Include="sound\adplug\nuked_opl.c" />
+    <ClCompile Include="sound\adplug\player.cpp" />
+    <ClCompile Include="sound\adplug\rix.cpp" />
+    <ClCompile Include="sound\adplug\surroundopl.cpp" />
+    <ClCompile Include="sound\libmad\bit.c" />
+    <ClCompile Include="sound\libmad\decoder.c" />
+    <ClCompile Include="sound\libmad\fixed.c" />
+    <ClCompile Include="sound\libmad\frame.c" />
+    <ClCompile Include="sound\libmad\huffman.c" />
+    <ClCompile Include="sound\libmad\layer12.c" />
+    <ClCompile Include="sound\libmad\layer3.c" />
+    <ClCompile Include="sound\libmad\music_mad.c" />
+    <ClCompile Include="sound\libmad\resampler.c" />
+    <ClCompile Include="sound\libmad\stream.c" />
+    <ClCompile Include="sound\libmad\synth.c" />
+    <ClCompile Include="sound\libmad\timer.c" />
+    <ClCompile Include="sound\native_midi\native_midi.cpp" />
+    <ClCompile Include="sound\native_midi\native_midi_common.c" />
+    <ClCompile Include="s\CDeployOnTheMap.cpp" />
+    <ClCompile Include="s\CFileDir.cpp" />
+    <ClCompile Include="s\CGetLing.cpp" />
+    <ClCompile Include="s\CGetPalData.cpp" />
+    <ClCompile Include="s\CListScriptEntry.cpp" />
+    <ClCompile Include="s\CMapList.cpp" />
+    <ClCompile Include="s\cMap_Dlg.cpp" />
+    <ClCompile Include="s\CPalMapEdit.cpp" />
+    <ClCompile Include="s\cScriptCaller.cpp" />
+    <ClCompile Include="s\CsDataGrid.cpp" />
+    <ClCompile Include="s\CsListCtrl.cpp" />
+    <ClCompile Include="s\CsTree.cpp" />
+    <ClCompile Include="s\gridctrl_src\GridCell.cpp" />
+    <ClCompile Include="s\gridctrl_src\GridCellBase.cpp" />
+    <ClCompile Include="s\gridctrl_src\GridCtrl.cpp" />
+    <ClCompile Include="s\gridctrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="s\gridctrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="s\gridctrl_src\TitleTip.cpp" />
+    <ClCompile Include="s\MapPict_Dlg.cpp" />
+    <ClCompile Include="s\NoPackedPict_Dlg.cpp" />
+    <ClCompile Include="s\PackedPict_Dlg.cpp" />
+    <ClCompile Include="s\s.cpp" />
+    <ClCompile Include="s\sDlg.cpp" />
+    <ClCompile Include="s\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main\caviplay.h" />
+    <ClInclude Include="main\cbattle.h" />
+    <ClInclude Include="main\cbattlebase.h" />
+    <ClInclude Include="main\CConfig.h" />
+    <ClInclude Include="main\cenemy.h" />
+    <ClInclude Include="main\cfight.h" />
+    <ClInclude Include="main\cgameui.h" />
+    <ClInclude Include="main\cgl_render.h" />
+    <ClInclude Include="main\cgl_texture.h" />
+    <ClInclude Include="main\command.h" />
+    <ClInclude Include="main\cpalapp.h" />
+    <ClInclude Include="main\cpalbaseio.h" />
+    <ClInclude Include="main\cpalevent.h" />
+    <ClInclude Include="main\CPalMain.h" />
+    <ClInclude Include="main\cpalui.h" />
+    <ClInclude Include="main\cscene.h" />
+    <ClInclude Include="main\cscript.h" />
+    <ClInclude Include="main\csdlscreen.h" />
+    <ClInclude Include="main\csound.h" />
+    <ClInclude Include="main\cuibattle.h" />
+    <ClInclude Include="main\palerror.h" />
+    <ClInclude Include="main\palgpgl.h" />
+    <ClInclude Include="sound\adplug\binfile.h" />
+    <ClInclude Include="sound\adplug\binio.h" />
+    <ClInclude Include="sound\adplug\convertopl.h" />
+    <ClInclude Include="sound\adplug\dosbox\dbopl.cpp.h" />
+    <ClInclude Include="sound\adplug\dosbox\dbopl.h" />
+    <ClInclude Include="sound\adplug\dosbox\dosbox.h" />
+    <ClInclude Include="sound\adplug\dosbox\opl.cpp.h" />
+    <ClInclude Include="sound\adplug\dosbox\opl.h" />
+    <ClInclude Include="sound\adplug\dosbox_opls.h" />
+    <ClInclude Include="sound\adplug\emuopls.h" />
+    <ClInclude Include="sound\adplug\fprovide.h" />
+    <ClInclude Include="sound\adplug\mame\fmopl.cpp.h" />
+    <ClInclude Include="sound\adplug\mame\fmopl.h" />
+    <ClInclude Include="sound\adplug\mame\mame.h" />
+    <ClInclude Include="sound\adplug\mame\ymf262.cpp.h" />
+    <ClInclude Include="sound\adplug\mame\ymf262.h" />
+    <ClInclude Include="sound\adplug\mame_opls.h" />
+    <ClInclude Include="sound\adplug\nuked\opl3.c.h" />
+    <ClInclude Include="sound\adplug\nuked\opl3.h" />
+    <ClInclude Include="sound\adplug\nuked_opl.h" />
+    <ClInclude Include="sound\adplug\opl.h" />
+    <ClInclude Include="sound\adplug\opltypes.h" />
+    <ClInclude Include="sound\adplug\player.h" />
+    <ClInclude Include="sound\adplug\rix.h" />
+    <ClInclude Include="sound\adplug\surroundopl.h" />
+    <ClInclude Include="sound\libmad\bit.h" />
+    <ClInclude Include="sound\libmad\decoder.h" />
+    <ClInclude Include="sound\libmad\fixed.h" />
+    <ClInclude Include="sound\libmad\frame.h" />
+    <ClInclude Include="sound\libmad\huffman.h" />
+    <ClInclude Include="sound\libmad\layer12.h" />
+    <ClInclude Include="sound\libmad\layer3.h" />
+    <ClInclude Include="sound\libmad\libmad_config.h" />
+    <ClInclude Include="sound\libmad\libmad_global.h" />
+    <ClInclude Include="sound\libmad\mad.h" />
+    <ClInclude Include="sound\libmad\music_mad.h" />
+    <ClInclude Include="sound\libmad\resampler.h" />
+    <ClInclude Include="sound\libmad\stream.h" />
+    <ClInclude Include="sound\libmad\synth.h" />
+    <ClInclude Include="sound\libmad\timer.h" />
+    <ClInclude Include="sound\native_midi\native_midi.h" />
+    <ClInclude Include="sound\native_midi\native_midi_common.h" />
+    <ClInclude Include="s\CDeployOnTheMap.h" />
+    <ClInclude Include="s\CFileDir.h" />
+    <ClInclude Include="s\CGetLing.h" />
+    <ClInclude Include="s\CGetPalData.h" />
+    <ClInclude Include="s\CListScriptEntry.h" />
+    <ClInclude Include="s\CMapList.h" />
+    <ClInclude Include="s\cMap_Dlg.h" />
+    <ClInclude Include="s\CPalMapEdit.h" />
+    <ClInclude Include="s\cScriptCaller.h" />
+    <ClInclude Include="s\CsDataGrid.h" />
+    <ClInclude Include="s\CsListCtrl.h" />
+    <ClInclude Include="s\CsTree.h" />
+    <ClInclude Include="s\CTestData.h" />
+    <ClInclude Include="s\gridctrl_src\CellRange.h" />
+    <ClInclude Include="s\gridctrl_src\GridCell.h" />
+    <ClInclude Include="s\gridctrl_src\GridCellBase.h" />
+    <ClInclude Include="s\gridctrl_src\GridCtrl.h" />
+    <ClInclude Include="s\gridctrl_src\GridDropTarget.h" />
+    <ClInclude Include="s\gridctrl_src\InPlaceEdit.h" />
+    <ClInclude Include="s\gridctrl_src\MemDC.h" />
+    <ClInclude Include="s\gridctrl_src\TitleTip.h" />
+    <ClInclude Include="s\MapPict_Dlg.h" />
+    <ClInclude Include="s\NoPackedPict_Dlg.h" />
+    <ClInclude Include="s\PackedPict_Dlg.h" />
+    <ClInclude Include="s\resource.h" />
+    <ClInclude Include="s\s.h" />
+    <ClInclude Include="s\sDlg.h" />
+    <ClInclude Include="s\stdafx.h" />
+    <ClInclude Include="s\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="s\s.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="s\res\s.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

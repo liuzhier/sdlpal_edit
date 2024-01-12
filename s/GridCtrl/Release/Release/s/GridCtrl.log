@@ -1,0 +1,7 @@
+﻿  GridCell.cpp
+  GridCellBase.cpp
+  GridCtrl.cpp
+  GridDropTarget.cpp
+  InPlaceEdit.cpp
+  TitleTip.cpp
+  GridCtrl.vcxproj -> D:\qt\sdlpal\Release\GridCtrl.lib
