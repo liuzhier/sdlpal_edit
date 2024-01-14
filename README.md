@@ -31,6 +31,9 @@
 3.地图编辑
 ![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/3d23d35c-b7bf-4695-b100-b9fa178dfbd3)
 
+4.运行
+![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/afc8a2c7-99fb-4ef4-9cfa-833f0fb173f3)
+
 待续：
 
 
