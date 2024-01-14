@@ -21,6 +21,10 @@
 
 9.实现了游戏调试和运行功能
 
+运行示例
+1.主页面
+![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/40be8df2-272e-4505-80c4-5b4abec0131a)
+
 待续：
 
 
