@@ -243,6 +243,9 @@
     <ClCompile Include="s\PackedPict_Dlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sdlpal\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main\caviplay.h">
