@@ -25,6 +25,10 @@
 1.主页面
 ![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/40be8df2-272e-4505-80c4-5b4abec0131a)
 
+2.编辑页面
+![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/bdb2c6a3-5b2b-4305-bf03-a500c581761d)
+
+
 待续：
 
 
