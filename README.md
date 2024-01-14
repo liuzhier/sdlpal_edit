@@ -28,6 +28,8 @@
 2.编辑页面
 ![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/bdb2c6a3-5b2b-4305-bf03-a500c581761d)
 
+3.地图编辑
+![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/3d23d35c-b7bf-4695-b100-b9fa178dfbd3)
 
 待续：
 
