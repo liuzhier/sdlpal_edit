@@ -183,7 +183,6 @@
     <ClCompile Include="main\midiplay.cpp" />
     <ClCompile Include="main\pal1.cpp" />
     <ClCompile Include="main\yj_compress.cpp" />
-    <ClCompile Include="sdlpal\main.cpp" />
     <ClCompile Include="sound\adplug\binfile.cpp" />
     <ClCompile Include="sound\adplug\binio.cpp" />
     <ClCompile Include="sound\adplug\dosbox_opls.cpp" />
