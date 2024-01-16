@@ -443,8 +443,6 @@ INT CPalBaseIO::PAL_SaveSlotMenu(
 			kNumColorYellow, kNumAlignRight, 10);
 	}
 
-
-	//VIDEO_UpdateScreen(&rect);
 	RenderPresent(gpTextureReal);
 	//
 	// Activate the menu

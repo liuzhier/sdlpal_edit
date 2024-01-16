@@ -279,7 +279,8 @@ BOOL CGameUI::PAL_SystemMenu(
 			gpGlobals->bCurrentSaveSlot = (BYTE)iSlot;
 
 			iSavedTimes = 0;
-			for (i = 1; i <= 5; i++)
+			int MaxSaveFile = gConfig->m_Function_Set[47];
+			for (i = 1; i <= MaxSaveFile; i++)
 			{
 				fp = fopen(va("%s%d%s", PalDir.c_str(), i, ".rpg"), "rb");
 				if (fp != NULL)
