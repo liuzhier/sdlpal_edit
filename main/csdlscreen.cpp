@@ -310,7 +310,7 @@ VOID CSdlScreen::PAL_SetPalette(
         VIDEO_SetPalette(p);
     }
 }
-
+     
 VOID CSdlScreen::PAL_DrawText(LPCSTR lpszText, PAL_POS pos, BYTE bColor, BOOL fShadow, BOOL fUpdate, int size)
 {
     //已经将输入改为UTF8格式

@@ -415,7 +415,7 @@ INT CPalBaseIO::PAL_SaveSlotMenu(
 		rgMenuItem[i].wValue = i + 1;
 		rgMenuItem[i].fEnabled = TRUE;
 		rgMenuItem[i].wNumWord = 20012 + i;// LOADMENU_LABEL_SLOT_FIRST + i;
-		rgMenuItem[i].pos = PAL_XY(210, 12 + vSpace[maxSaveFile-5] * i);
+		rgMenuItem[i].pos = PAL_XY(210, 12 + vSpace[maxSaveFile - 5] * i);
 	}
 	
 	// Draw the numbers of saved times
