@@ -1,6 +1,6 @@
 #pragma once
 #include "../main/palgpgl.h"
-#include <sdl.h>
+#include <SDL2\SDL.h>
 #include <vector>
 #define IMAGE_X 128
 #define IMAGE_Y 60

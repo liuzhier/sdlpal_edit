@@ -21,7 +21,7 @@
 //
 
 
-#include <SDL.h>
+#include <SDL2\SDL.h>
 #include "csound.h"
 #if 0 //因有内存泄露 ，启用旧的版本
 
@@ -113,7 +113,7 @@ VOID CSound::MIDI_SetVolume(int iVolume)
 #else
 //旧的版本
 
-#include <SDL_rwops.h>
+#include <SDL2\SDL_rwops.h>
 #include<mmeapi.h>
 
 #if SDL_BYTEORDER == SDL_BIG_ENDIAN
@@ -153,7 +153,7 @@ typedef struct
 
 typedef struct _NativeMidiSong NativeMidiSong;
 
-#include <SDL.h>
+#include <SDL2\SDL.h>
 
 /* Midi Status Bytes */
 #define MIDI_STATUS_NOTE_OFF	0x8

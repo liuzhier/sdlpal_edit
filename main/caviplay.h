@@ -1,7 +1,7 @@
 #ifndef CAVIPLAY_H
 #define CAVIPLAY_H
 #include "command.h"
-#include <SDL.h>
+#include <SDL2\SDL.h>
 class CAviPlay
 {
     

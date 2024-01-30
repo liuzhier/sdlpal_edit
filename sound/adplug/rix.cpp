@@ -25,7 +25,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include "rix.h"
-#include <SDL_stdinc.h>
+#include <SDL2\SDL_stdinc.h>
 
 using namespace std;
 

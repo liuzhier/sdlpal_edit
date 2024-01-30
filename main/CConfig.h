@@ -4,7 +4,7 @@
 
 #include "../s/stdafx.h"
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include "command.h"
 #include "../sound/adplug/opltypes.h"
 #include <string>

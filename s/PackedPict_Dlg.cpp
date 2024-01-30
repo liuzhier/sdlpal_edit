@@ -1,7 +1,7 @@
 #include "PackedPict_Dlg.h"
 #include "resource.h"
 #include "sDlg.h"
-#include <SDL.h>
+#include <SDL2\SDL.h>
 
 static LPCWSTR pObject_Menu_Str[] =
 {

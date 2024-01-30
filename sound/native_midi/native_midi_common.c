@@ -23,7 +23,7 @@
 
 #include "native_midi_common.h"
 
-#include "SDL.h"
+#include <SDL2\SDL.h>
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -8,7 +8,7 @@
 #define _HAS_STD_BYTE 0
  
 #include <sys/stat.h>
-#include <SDL.h>
+#include <SDL2\SDL.h>
 #include <iostream>
 #include <cassert>
 #include "cpalapp.h"

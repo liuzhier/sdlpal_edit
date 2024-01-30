@@ -1,5 +1,5 @@
 #include "cgl_render.h"
-#include <SDL_syswm.h>
+#include <SDL2\SDL_syswm.h>
 #include "cscript.h"
 
 #define HZSIZE       32

@@ -3,7 +3,7 @@
 #include "cpalapp.h"
 #include "cpalevent.h"
 #include "cgl_render.h"
-//#include <SDL.h>
+//#include <SDL2\SDL.h>
 
 //本类继承基本OI 操作的 CPalApp 实现与SDL相关操作
 class CPalUI : public CPalApp

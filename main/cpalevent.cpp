@@ -1,6 +1,6 @@
 #include "cpalevent.h"
 #include "CConfig.h"
-#include <SDL.h>
+#include <SDL2\SDL.h>
 #include "palgpgl.h"
 #include "cscript.h"
 
