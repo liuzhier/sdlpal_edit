@@ -31,7 +31,7 @@ const LPCSTR PalFileName[] =
 	"gop.mkf",
 	nullptr,
 };
-
+ 
 CPalApp::CPalApp()
 {
 }
