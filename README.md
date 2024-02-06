@@ -37,9 +37,11 @@
 #系统构建：
 1、 C++版本设置为17以上
 
-2、字符集设定为UTF8
+2、字符集设定为使用 Unicode 字符集
 
-3、使用vcpkg工具引入SDL2库和GLAD库，具体指令为在命令行提示符下，转到c:\或d:\目录或任意目录 
+3、编译选项为在共享 DLL 中使用 MFC
+
+4、使用vcpkg工具引入SDL2库和GLAD库，具体指令为在命令行提示符下，转到c:\或d:\目录或任意目录 
 输入命令 ：
 
 git clone https://github.com/microsoft/vcpkg.git
