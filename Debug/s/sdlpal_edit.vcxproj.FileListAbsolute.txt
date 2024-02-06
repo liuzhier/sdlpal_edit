@@ -1,2 +1,0 @@
-D:\git\sdlpal_edit\Debug\s\sdlpal_edit.vcxproj.CopyComplete
-D:\git\sdlpal_edit\Debug\SDL2d.dll

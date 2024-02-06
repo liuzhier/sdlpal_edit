@@ -1,4 +1,11 @@
 .vs
 /README.md
 /debug
+/debug/s
+/release
+/release/s
 /x64
+/x64/debug
+/x64/debug/s
+/x64/release
+/x64/release/s
