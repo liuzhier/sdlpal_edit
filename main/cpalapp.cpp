@@ -60,7 +60,7 @@ INT CPalApp::InitPalBase()
 			return 1;;
 		}
 	}
-
+	 
 	//以下装入游戏数据
 	if (!gpGlobals)
 	{
@@ -91,7 +91,7 @@ INT CPalApp::InitPalBase()
 	PAL_InitUI();
 
 	PAL_LoadDefaultGame();
-	gpGlobals->bIsBig5 = ((PAL_IsBig5() == 1));
+	gpGlobals->bIsBig5 = ((PAL_IsBig5(gConfig->m_Function_Set[49]) == 1));
 	gpGlobals->lpObjectDesc = PAL_LoadObjectDesc("desc.dat");
 	
 	return 0;

@@ -126,7 +126,7 @@ public:
     INT PAL_InitText(VOID);
     INT PAL_InitUI(VOID);
     VOID PAL_FreeUI(VOID);
-    INT PAL_IsBig5(VOID);
+    INT PAL_IsBig5(INT Default_Decision = 0);
     INT PAL_IsPalWIN(VOID);
     VOID PAL_FreeText();
 

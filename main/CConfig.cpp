@@ -122,6 +122,7 @@ CConfig::CConfig()
     m_Function_Set[46] = 4;//字体粗细 1-10
     m_Function_Set[47] = 5;//最大存档文件数5-10
     m_Function_Set[48] = 0;//变速百分比 负数加速 正数减速
+    m_Function_Set[49] = 0;//缺省认定系统字符集，0 自动，1 GB2312，2BIG5
 
 
     iAudioDevice = -1; //声音设备号

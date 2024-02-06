@@ -171,8 +171,19 @@ BOOL CGridCell::Edit(int nRow, int nCol, CRect rect, CPoint /* point */, UINT nI
 {
     if ( m_bEditing )
 	{      
+        ////
         if (m_pEditWnd)
-		    m_pEditWnd->SendMessage ( WM_CHAR, nChar );    
+            if (!IsWindow(m_pEditWnd->GetSafeHwnd()))
+            {
+                /*/
+                CGridCtrl* pGrid = GetGrid();
+                DWORD dwStyle = ES_LEFT;
+                m_pEditWnd = new CInPlaceEdit(pGrid, rect, dwStyle, nID, nRow, nCol, GetText(), nChar);
+                m_pEditWnd->SendMessage(WM_CHAR, nChar);
+                */
+            }
+            else 
+                m_pEditWnd->SendMessage(WM_CHAR, nChar);
     }  
 	else  
 	{   
@@ -183,7 +194,7 @@ BOOL CGridCell::Edit(int nRow, int nCol, CRect rect, CPoint /* point */, UINT nI
 			dwStyle = ES_CENTER;
 		
 		m_bEditing = TRUE;
-		
+        m_pEditWnd = NULL;
 		// InPlaceEdit auto-deletes itself
 		CGridCtrl* pGrid = GetGrid();
 		m_pEditWnd = new CInPlaceEdit(pGrid, rect, dwStyle, nID, nRow, nCol, GetText(), nChar);

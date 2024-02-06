@@ -745,7 +745,7 @@ afx_msg LRESULT CsDataGrid::OnGridCellCharge(WPARAM wParam, LPARAM lParam)
 
 void CsDataGrid::OnEndEditCell(int nRow, int nCol, CString str)
 {
-	if (nRow >= m_DataArray.size())
+	if (nRow > m_DataArray.size())
 		return;//此调用不正常原因不明
 	CString strCurrentText = GetItemText(nRow, nCol);
 	if (strCurrentText != str)

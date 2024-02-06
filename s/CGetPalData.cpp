@@ -337,7 +337,7 @@ VOID CGetPalData::PAL_ReloadPAL(BOOL isDelete)
 	else
 		gpGlobals->g.nObject = len / sizeof(OBJECT_DOS);
 
-	gpGlobals->bIsBig5 = PAL_IsBig5();
+	gpGlobals->bIsBig5 = (PAL_IsBig5(gConfig->m_Function_Set[49]) == 1);
 	PAL_InitText();
 	PAL_LoadDefaultGame();
 	if (gpGlobals->lpObjectDesc == NULL)

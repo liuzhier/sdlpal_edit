@@ -1,0 +1,2 @@
+D:\git\sdlpal_edit\Release\s\sdlpal_edit.vcxproj.CopyComplete
+D:\git\sdlpal_edit\Release\SDL2.dll

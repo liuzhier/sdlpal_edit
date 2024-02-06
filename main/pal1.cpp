@@ -1264,13 +1264,15 @@ VOID CPalApp::PAL_FreeUI(
     }
 }
 
-INT  CPalApp::PAL_IsBig5(VOID)
+INT  CPalApp::PAL_IsBig5(INT Default_Decision)
 {
     /*
-    * 功能：测试字符集是否是BIG5 
-    * 返回：1 是，0 gp2312 //其他 -1;
+    * 功能：测试字符集是否是BIG5
+    * 输入缺省定义 1 返回0 2 返回 1，其他测试
+    * 返回：1 是，0 GB2312 //其他 -1;
     */
-
+    if (Default_Decision == 1)return 0;
+    if (Default_Decision == 2)return 1;
     int noGb2312 = 0, noBig5 = 0;
     LPBYTE buf{};
     FILE *fpWord =  UTIL_OpenRequiredFile("word.dat");
