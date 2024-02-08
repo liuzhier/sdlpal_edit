@@ -35,6 +35,7 @@
 ![image](https://github.com/wd22222222/sdlpal_edit/assets/63216297/afc8a2c7-99fb-4ef4-9cfa-833f0fb173f3)
 
 #系统构建：
+
 1、 C++版本设置为17以上
 
 2、字符集设定为使用 Unicode 字符集
@@ -69,6 +70,6 @@ D:\vcpkg>vcpkg integrate install
 
 至此所有附加库均已经引入完毕，具体解释可以参照网上相关资料
 
-4、使用VS中的生成命令构建，构建成功OK。
+5、使用VS中的生成命令构建，构建成功OK。
 
 #注意使用VCPKG生成的调试库会有内存泄露提示，具体原因未知。
