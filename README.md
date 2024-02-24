@@ -73,3 +73,35 @@ D:\vcpkg>vcpkg integrate install
 5、使用VS中的生成命令构建，构建成功OK。
 
 #注意使用VCPKG生成的调试库会有内存泄露提示，具体原因未知。
+
+#使用SDL2静态库
+
+使用静态库后，在发布调用SDL2游戏时不用同时拷贝SDL.DLL，可以避免因SDL2.DLL版本问题，只需要单独拷贝 EXE文件。
+
+使用静态库的方法
+
+1.使用vcpkg 建立静态库
+
+在已经安装并使用vcpkg 管理附加库的前提下键入命令
+
+d:\vcpkg\vcpkg install sdl2:x64-windows-static //64位库
+
+d:\vcpkg\vcpkg install sdl2:x86-windows-static //32位库
+
+引用 在VS中 项目-》属性-》链接器-》输入-》编辑中 
+
+将原来的 SDL.LIB项 改为 sdl-static.lib
+
+增加一项  Version.lib
+
+或 直接将 以下 条目 拷贝到编辑栏中
+
+winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2-static.lib;Version.lib;%(AdditionalDependencies)
+
+OK
+
+
+
+
+
+
