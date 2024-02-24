@@ -98,6 +98,12 @@ d:\vcpkg\vcpkg install sdl2:x86-windows-static //32位库
 
 winmm.lib;imm32.lib;setupapi.lib;glu32.lib;opengl32.lib;sdl2-static.lib;Version.lib;%(AdditionalDependencies)
 
+如果编译时提示找不到静态库时，可在项目属性 VC++ 目录中 将内容用下面条目拷贝上
+
+D:\drv\vcpkg\buildtrees\sdl2\x64-windows-static-rel;$(LibraryPath)
+
+其中：d:\drv 是我自己的vcpkg 目录，在操作中将此改成自己的vcpkg目录即可
+
 OK
 
 
